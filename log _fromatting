@@ -1,0 +1,24 @@
+To standardize the format for logging across all APIs, you can create a structured log format that includes essential information such as timestamp, log level, source, log message, and any additional metadata. Here's a suggested format:
+
+{
+    "timestamp": "2023-09-15T08:00:00Z",
+    "level": "error",
+    "source": "Search API",
+    "message": "Inside the Search API",
+    "metadata": {
+        "additional_field": "value"
+    }
+}
+Explanation of each field:
+
+"timestamp": Represents the time when the log entry was created. It's recommended to use a standardized timestamp format like ISO 8601 (YYYY-MM-DDTHH:MM:SSZ) for consistency.
+"level": Indicates the severity level of the log message. This could be "info", "warning", "error", or "debug", among others, to categorize the severity of the event.
+"source": Specifies the source of the log message, which could be the name of the API or a specific component within the API.
+"message": Contains the actual log message providing context or details about the event or operation.
+"metadata": Optional field for including additional metadata related to the log entry. This can include any custom fields or information that might be useful for debugging or analysis purposes.
+By adhering to this standardized log format, you ensure consistency across all APIs, making it easier to parse, analyze, and manage log data efficiently. Additionally, you can expand or modify the format based on specific requirements or preferences of your logging system.
+
+
+
+
+
